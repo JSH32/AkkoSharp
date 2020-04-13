@@ -29,8 +29,9 @@ namespace Akko
             
             // Event handler
             #region EventArea
-            // Message received event
-            _client.MessageReceived += new MessageRecieved().MessageReceived;
+            
+            _client.MessageReceived += new MessageRecieved().MessageReceived; // Message received event
+            
             #endregion
             
             new CommandHandler(_client, new CommandService());

@@ -25,6 +25,8 @@
     <e p="C:\Users\rudni\.nuget\packages\mongodb.driver.core\2.11.0-beta1\runtimes\win\native\snappy64.dll" t="Include" />
     <e p="C:\Users\rudni\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
     <e p="C:\Users\rudni\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_Akko.2023064410.00" t="ExcludeRecursive" />
+    <e p="C:\Users\rudni\AppData\Roaming\JetBrains\Rider2020.1\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\rudni\AppData\Roaming\JetBrains\Rider2020.1\extensions" t="IncludeRecursive" />
     <e p="D:\Stuff\.NET Proj\Akko" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="Akko.csproj" t="IncludeRecursive" />
