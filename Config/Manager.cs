@@ -7,24 +7,12 @@ namespace Akko.Config
 {
     public class Manager
     {
-        public static void Load()
+        public Model Load()
         {
-            if (File.Exists("config.json"))
-            {
-                string configfile = File.ReadAllText("config.json");
-                var config = (JObject)JsonConvert.DeserializeObject(configfile);
-                
-                // Setting config values to global
-                Config.Prefix = config["Prefix"].Value<string>();
-                Config.Token = config["Token"].Value<string>();
-                Config.MongoURL = config["MongoURL"].Value<string>();
-                Config.DBName = config["DBName"].Value<string>();
-            }
-            else
-            {
-                Console.WriteLine("No config found!");
-                System.Environment.Exit(0);
-            }
+            string configfile = File.ReadAllText("config.json");
+            Model config = JsonConvert.DeserializeObject<Model>(configfile);
+
+            return config;
         }
         
     }

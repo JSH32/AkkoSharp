@@ -31,10 +31,14 @@
       <e p="Akko.sln" t="IncludeFlat" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Bot.cs" t="Include" />
-      <e p="Config" t="Include">
-        <e p="Config.cs" t="Include" />
-        <e p="Manager.cs" t="Include" />
+      <e p="Commands" t="Include">
+        <e p="Test.cs" t="Include" />
       </e>
+      <e p="Config" t="Include">
+        <e p="Manager.cs" t="Include" />
+        <e p="Model.cs" t="Include" />
+      </e>
+      <e p="config.json" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">

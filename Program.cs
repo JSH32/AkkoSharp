@@ -8,11 +8,11 @@ namespace Akko
     {    
          public static void Main(string[] args)
          {
-             // Set config values from file
-             Config.Manager.Load();
+             // Config
+             Model config = new Manager().Load();
              
              // Start bot
-             new Bot().MainAsync().GetAwaiter().GetResult(); 
+             new Bot(config).MainAsync().GetAwaiter().GetResult();
          }
     }
  }

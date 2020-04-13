@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Akko.Services;
+using Akko.Config;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
@@ -9,6 +10,12 @@ namespace Akko
 {
     public class Bot
     {
+        private Model _config;
+        public Bot(Model config)
+        {
+            _config = config;
+        }
+        
         private DiscordSocketClient _client;
         public async Task MainAsync()
         {
@@ -16,7 +23,7 @@ namespace Akko
 
             _client.Log += Log;
             
-            await _client.LoginAsync(TokenType.Bot, Config.Config.Token);
+            await _client.LoginAsync(TokenType.Bot, _config.Token);
             await _client.StartAsync();
             
             _client.MessageReceived += MessageReceived;
