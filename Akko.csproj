@@ -5,4 +5,12 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Discord.Net" Version="2.1.1" />
+      <PackageReference Include="MongoDB.Bson" Version="2.11.0-beta1" />
+      <PackageReference Include="MongoDB.Driver" Version="2.11.0-beta1" />
+      <PackageReference Include="MongoDB.Driver.Core" Version="2.11.0-beta1" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    </ItemGroup>
+
 </Project>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\rudni\.nuget\packages\mongodb.driver.core\2.11.0-beta1\contentFiles\any\netstandard2.0\Core" t="Include">
+      <e p="Compression" t="Include">
+        <e p="Snappy" t="Include">
+          <e p="lib" t="Include">
+            <e p="win" t="Include">
+              <e p="snappy32.dll" t="Include" />
+              <e p="snappy64.dll" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Zstandard" t="Include">
+          <e p="lib" t="Include">
+            <e p="win" t="Include">
+              <e p="libzstd.dll" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+    </e>
+    <e p="C:\Users\rudni\.nuget\packages\mongodb.driver.core\2.11.0-beta1\runtimes\win\native\libzstd.dll" t="Include" />
+    <e p="C:\Users\rudni\.nuget\packages\mongodb.driver.core\2.11.0-beta1\runtimes\win\native\snappy32.dll" t="Include" />
+    <e p="C:\Users\rudni\.nuget\packages\mongodb.driver.core\2.11.0-beta1\runtimes\win\native\snappy64.dll" t="Include" />
+    <e p="C:\Users\rudni\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rudni\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_Akko.2023064410.00" t="ExcludeRecursive" />
+    <e p="D:\Stuff\.NET Proj\Akko" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
+      <e p="Akko.csproj" t="IncludeRecursive" />
+      <e p="Akko.sln" t="IncludeFlat" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Bot.cs" t="Include" />
+      <e p="Config" t="Include">
+        <e p="Config.cs" t="Include" />
+        <e p="Manager.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="Akko.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Services" t="Include">
+        <e p="CommandHandler.cs" t="Include" />
+        <e p="MongoCRUD.cs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

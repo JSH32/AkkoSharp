@@ -1,0 +1,6 @@
+{
+	"Prefix": "a!",
+	"Token": "Token here",
+	"MongoURL": "DB String Here",
+	"DBName": "Database Name Here"
+}
