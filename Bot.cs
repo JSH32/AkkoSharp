@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Akko.Services;
 using Akko.Config;
+using Akko.Events;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
@@ -26,7 +27,11 @@ namespace Akko
             await _client.LoginAsync(TokenType.Bot, _config.Token);
             await _client.StartAsync();
             
-            _client.MessageReceived += MessageReceived;
+            // Event handler
+            #region EventArea
+            // Message received event
+            _client.MessageReceived += new MessageRecieved().MessageReceived;
+            #endregion
             
             new CommandHandler(_client, new CommandService());
 
@@ -39,10 +44,6 @@ namespace Akko
             Console.WriteLine(msg.ToString());
             return Task.CompletedTask;
         }
-        
-        private async Task MessageReceived(SocketMessage message)
-        {
-           
-        }
+
     }
 }
