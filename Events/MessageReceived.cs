@@ -4,11 +4,11 @@ using Discord.WebSocket;
 
 namespace Akko.Events
 {
-    public class MessageRecieved
+public class MessageRecieved
+{
+    internal async Task MessageReceived(SocketMessage message)
     {
-        internal async Task MessageReceived(SocketMessage message)
-        {
-            Console.WriteLine(message);
-        }
+        Console.WriteLine(message);
     }
+}
 }
